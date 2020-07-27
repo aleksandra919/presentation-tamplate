@@ -33,12 +33,777 @@
 			</section>
 			<section class="desc">
 				<h2>Full-Stack Bootcamp</h2>
-				<p class="light-pink-text center">Wstęp do języka PHP.</p>
+				<p class="light-pink-text center">Wstęp do języka HTML.</p>
 				<div class="flex center">
 					<small class="italic self-center">Power by</small>
 					<img class="img-medium" src="img/logo_WIT_biel.png">
 				</div>
 			</section>
+			<!-- HTML Start -->
+			<section class="definition">
+				<h2 class="dark-pink-text">Jak działa strona internetowa?</h2>
+			</section>
+			<section>
+				<section>
+					<p class="">Strona internetowa to pliki o rozszerzeniu .html. Kiedy wpisujemy adres strony w przeglądarce serwer wysyła pliki tej strony do naszego komputera i wyświetla nam je w przeglądarce.
+					</p>
+				</section>
+				<section>
+					OBRAZEK !!!
+				</section>
+			</section>
+
+			<section class="definition">
+				<h2 class="dark-pink-text">Co to jest HTML?</h2>
+			</section>
+			<section>
+				<section>
+					<p>HTML (ang. HyperText Marup Language) to hipertekstowy język znaczników używany do budowania stron internetowych
+						(dokumentów). HTML nadaje strukturę (szkielet) treści strony oraz znaczenie zawartym w niej elementom.</p>
+				</section>
+				<section>
+					<h3 class="dark-pink-text">HTML vs. CSS</h3>
+					<p>Język html nazywa poszczególne elementy strony internetowej, np. paragraf. 
+						Elementy te służą do porządkowania strony i formatowania treści.</p>
+					<p>W języku CSS określa się jego wygląd.
+						CSS to po prostu pliki zawierające zasady formatowania strony internetowe
+						 np: rozmiar i kolor czcionki, kolor tła, rozmieszczenie elementów na stronie</p> 
+				</section>
+			</section>
+
+			<section class="definition">
+				<h2 class="dark-pink-text">Znaczniki HTML</h2>
+			</section>
+			<section>
+				<section>
+					<p class="">Znaczniki są to wyrażenia, które mieszczą się pomiędzy znakami < >.</p>
+					<p>Elementy html mogą posiadać atrybuty i przypisane do nich wartości.</p>
+					<div class="item">
+						<img class="item_img" src="img/znacznik_html.png">
+					</div>
+				</section>
+				<section>
+					<p>Rozróżniamy znaczniki otwierające i zamykające np.:&lta href=”#”&gtLink 1&lt/a&gt</p>
+					<p>oraz znaczniki z grupy tzw. samozamykających np.:
+						&ltbr&gt, &lthr&gt, &ltimg&gt, &ltmeta&gt.</p>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2 class="dark-pink-text">Uwaga</h2>
+				</section>
+				<section>
+					<p>
+						Wszystkie białe znaki (white space) czyli np. spacje, tabulatory czy entery nie są uwzględniane przez przeglądarkę 
+						podczas renderowania kodu.
+					</p>
+				</section>
+				<section>
+					<p>Kodując znaczniki HTML warto trzymać się tzw. struktury drzewa. 
+						Chodzi o to, aby znaczniki zagnieżdżone poprzedzać znakiem tabulacji (wcięcie). 
+						Z taką strukturą drzewiastą znacznie lepiej i czytelniej się pracuje.</p>
+				</section>
+				<section>
+					<p>Ponieważ znaki: "<" oraz ">" są zarezerwowane dla znaczników, 
+					nie powinny się one pojawić w normalnej treści strony. </p>
+					<p>Jeżeli musimy ich użyć, należy wpisywać zamiast nich odpowiednio: &lt; oraz &gt;.</p>
+				</section>
+			</section>
+
+			<section class="definition">
+				<h3 class="light-pink-text">Podstawowa struktora pliku HTML</h3>
+			</section>
+			<section>
+				<p class="dark-pink-text">&ltDOCTYPE html&gt</p>
+				<p>Deklaracja dokumentu czyli informacja dla przeglądarki z jakim typem dokumentu ma doczynienia.</p>
+			</section>
+			<section>
+				<p class="dark-pink-text">&lthtml&gt ... &lt/html&gt</p>
+				<p>
+					Deklarację języka, w którym dokument zostanie napisany. 
+					Zapis ten oznacza, że pomiędzy znacznikiem otwarcia &lthtml&gt, a zamknięcia &lt/html&gt używany jest język html.
+				</p>
+			</section>
+			<section>
+				<section>
+					<p class="dark-pink-text">&lthead&gt &lt/head&gt</p>
+					<p>
+						Element ten opisuje ustawienia dokumentu html.
+						Pomiędzy znacznikami &lthead&gt i &lt/head&gt zamieszcza się informacje m.in o rodzaju języka, którym będziemy się posługiwać (polski, angielski, itd.).
+					</p>
+				</section>
+				<section>
+					<h2 class="dark-pink-text">Uwaga</h2>
+					<p>
+						Head umieszamy: 
+						&ltmeta charset="utf-8"&gt. Deklaracja ta warunkuje poprawne wyświetlanie polskich liter.
+					</p>
+					<p>
+						Przy pomocy tego elementu tworzy się tzw. meta tagi, czy meta elementy. 
+						Są to dane informujące przeglądarkę o ustawieniach strony internetowej.
+					</p>
+				</section>
+			</section>
+			<section>
+				<p class="dark-pink-text">
+					&ltbody&gt ... &lt/body&gt</p>
+					<p>Treść strony internetowej, czyli wszystko to co zostanie wyświetlone na ekranie.</p>
+			</section>
+			<section>
+				<p class="dark-pink-text">
+					Szkielet</p>
+					<p>&lt!DOCTYPE html&gt <br>
+						&nbsp &nbsp &lthtml&gt <br>
+						&nbsp &nbsp &nbsp &lthead&gt<br>
+						&nbsp &nbsp &nbsp &nbsp &ltmeta charset="UTF-8"&gt<br>
+						&nbsp &nbsp &nbsp &lt/head&gt<br>
+						&nbsp &nbsp &ltbody&gt<br>
+						&nbsp &nbsp  &nbsp &ltp&gt Tekst &lt/p&gt<br>
+						&nbsp &nbsp &lt/body&gt<br>
+						&nbsp &lt/html&gt<br>
+					</p>
+			</section>
+
+			<section>
+				<p class="dark-pink-text">
+					Nowa linia &ltbr&gt</p>
+					<p>Żeby przenieść tekst do następnej linii  musimy użyć elementu &ltbr&gt (ang. line break – przełamanie linii).</p>
+					<p>Znacznik &ltbr&gt jest samozamykającym się znacznikiem.<p>
+			</section>
+
+			<section>
+				<p class="dark-pink-text">
+					Twarda spacja  &nbsp</p>
+					<p>Znak specjalny niełamliwej spacji to &amp;nbsp; (ang. non-breaking space – spacja niełamliwa).</p>
+					<p>Każdy znak specjalny zaczyna się od znaku & (ampersand) i kończy się średnikiem ;</p>
+			</section>
+
+			<section>
+				<p class="dark-pink-text">
+					Komentarze w kodzie HTML</p>
+					<p>&lt!-- Moj komentarz do kodu --&gt</p>
+			</section>
+
+			<section>
+				<p class="dark-pink-text">
+					Linia horyzontalna</p>
+					<p>Do odgradzania treści używamy elementu &lthr&gt (ang. horizontal rules – pozioma linia).</p>
+					<hr>
+					<p>Znacznik &lthr&gt jest samozamykającym się znacznikiem.<p>
+			</section>
+
+			<section class="list">
+				<h3 class="light-pink-text">Formatowanie tekstu</h3>
+				<ul>
+					<li class="fragment">Wyraz <strong>pogrubiony</strong> &ltstrong&gt</li>
+					<li class="fragment">Wyraz <b>pogrubiony</b> &ltb&gt</li>
+					<li class="fragment">Wyraz <em>pochylony</em> &ltem&gt</li>
+					<li class="fragment">Wyraz <small>pomniejszony</small> &ltsmall&gt</li>
+					<li class="fragment">Wyraz <mark>podświetlony</mark> &ltmark&gt</li>
+					<li class="fragment">Index<sup>górny</sup> &ltsup&gt</li>
+					<li class="fragment">Index<sub>dolny</sub> &ltsub&gt</li>
+					<li class="fragment">Wyraz&nbsp<s>nieaktualny</s> &lts&gt</li>
+					<li class="fragment">Wyraz&nbsp<ins>wstawiony</ins> &ltins&gt</li>
+					<li class="fragment">Wyraz&nbsp<del>usunięty</del> &ltdel&gt</li>
+				</ul>
+			</section>
+
+			<section>
+				<p class="dark-pink-text">
+					HTML5</p>
+					<p>Html jest stale rozwijającym się standardem. 
+					Za jego rozwój oficjalnie odpowiedzialna jest organizacja W3C (World Wide Web Consortium).</p>
+					<p>HTML5 jest najnowszą wersją standardu opisującego język HTML.</p>
+					<a href="https://developer.mozilla.org/pl/docs/HTML/HTML5">Więcej informacji</a>
+			</section>
+
+		
+			<section class="definition">
+				<h2 class="dark-pink-text">Semantyka HTML5</h2>
+			</section>
+			<section>
+				<p>Semantyka pozwala na bardziej precyzyjne opisanie zawartości.</p>
+			</section>
+
+			<section>
+				<section>
+					<h2 class="dark-pink-text">&ltsection&gt</h2>
+				</section>
+				<section>
+					<p>Stanowi samodzielną sekcję, której nie można 
+					przedstawić za pomocą bardziej szczegółowej semantycznie sekcji. Element ten zazwyczaj posiada nagłówek.</p>
+				</section>
+				<section>
+					<h3 class="light-pink-text">Przykłady</h3>
+					<ul>
+						<li class="fragment">Lista wyników wyszukiwania.</li>
+						<li class="fragment">Wyświetlana mapa i jej sterowanie.</li>
+					</ul>
+				</section>
+				<section>
+					<h3 class="light-pink-text">Użycie</h3>
+					<ul>
+						<li class="fragment">Każdy element &ltsection&gt powinien zazwyczaj zawierać nagłówek (&lth1&gt-&lth6&gt) jako element potomny.</li>
+						<li class="fragment">Aby oddzielić podgrupy w treści elementu &ltsection&gt, używa się elementów&ltarticle&gt.</li>
+						<li class="fragment">Wystąpienie elementu &ltsection&gt powinną być logiczne w schemacie dokumentu. Nie używa się go w celu stworzenia ogólnego kontenera. Do tego służy element &ltdiv&gt</li>
+					</ul>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2 class="dark-pink-text">&ltarticle&gt</h2>
+				</section>
+				<section>
+					<p>Stanowi samodzielną kompozycję, która ma być niezależnie dystrybuowana lub wielokrotnego użytku.</p>
+				</section>
+				<section>
+					<h3 class="light-pink-text">Przykłady</h3>
+					<ul>
+						<li class="fragment">Post na forum.</li>
+						<li class="fragment">Artykuł.</li>
+						<li class="fragment">Wpis na bloga.</li>
+					</ul>
+				</section>
+				<section>
+					<h3 class="light-pink-text">Użycie</h3>
+					<ul>
+						<li class="fragment">Każdy element &ltarticle&gt powinien zazwyczaj zawierać nagłówek (&lth1&gt-&lth6&gt) jako element potomny.</li>
+				</ul>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2 class="dark-pink-text">&ltnav&gt</h2>
+				</section>
+				<section>
+					<p>Sekcja strony, której celem jest udostępnienie łączy nawigacyjnych.</p>
+				</section>
+				<section>
+					<h3 class="light-pink-text">Przykłady</h3>
+					<ul>
+						<li class="fragment">Menu.</li>
+						<li class="fragment">Spis treści.</li>
+						<li class="fragment">Indeksy.</li>
+					</ul>
+				</section>
+				<section>
+					<h3 class="light-pink-text">Użycie</h3>
+					<ul>
+						<li class="fragment">Nie jest konieczne, aby wszystkie linki były zawarte w elemencie &ltnav&gt. Przeznaczony jest on tylko dla głównego bloku linków nawigacyjnych.</li>
+						<li class="fragment">Zazwyczaj element  &ltfooter&gt  często zawiera listę łączy, które nie muszą znajdować się w elemencie &ltnav&gt.</li>
+					</ul>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2 class="dark-pink-text">&ltheader&gt</h2>
+				</section>
+				<section>
+					<p>Zawiera treść wprowadzająca zazwyczaj grupę pomocy wprowadzających lub nawigacyjnych.</p>
+				</section>
+				<section>
+					<h3 class="light-pink-text">Przykłady</h3>
+					<ul>
+						<li class="fragment">Logo.</li>
+						<li class="fragment">Formularz wyszukiwania.</li>
+						<li class="fragment">Elementy nagłówka.</li>
+					</ul>
+				</section>
+				<section>
+					<h3 class="light-pink-text">Użycie</h3>
+					<ul>
+						<li class="fragment">Nie dzieli treści na sekcje i dlatego nie wprowadza nowej sekcji do konspektu.</li>
+						<li class="fragment">Zwykle zawiera nagłówek otaczającej sekcji (&lth1&gt-&lth6&gt), ale nie jest to wymagane.</li>
+					</ul>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2 class="dark-pink-text">&ltfooter&gt</h2>
+				</section>
+				<section>
+					<p>Reprezentuję stopkę dla najbliższego kontentu lub elementu głównego.</p>
+				</section>
+				<section>
+					<h3 class="light-pink-text">Przykłady</h3>
+					<ul>
+						<li class="fragment">Informacje o autorze treści.</li>
+						<li class="fragment">Dane dotyczące praw autorskich.</li>
+						<li class="fragment">Linki do powiązanych dokumentów.</li>
+					</ul>
+				</section>
+				<section>
+					<h3 class="light-pink-text">Użycie</h3>
+					<ul>
+						<li class="fragment">Informacje o autorze można umieści w elemencie &ltaddress&gt który może być zawarty w elemencie &ltfooter&gt</li>
+						<li class="fragment">Nie dzieli treści na sekcje i dlatego nie wprowadza nowej sekcji do konspektu.</li>
+					</ul>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2 class="dark-pink-text">&ltaside&gt</h2>
+				</section>
+				<section>
+					<p>Stanowi pewnego rodzaju poboczną sekcję strony, która jest tylko nieznacznie powiązana tematycznie z treścią elementu, w którym się znajduje.</p>
+					<p>Takie sekcje są zwykle reprezentowane jako kolumny z boku artykułów lub wtrącenia.</p>
+				</section>
+				<section>
+					<h3 class="light-pink-text">Przykłady</h3>
+					<ul>
+						<li class="fragment">Powiązane reklamy, biografie autorów.</li>
+						<li class="fragment">Cytaty umieszczone w treści artykułu w postaci osobno wyróżnionych bloków.</li>
+						<li class="fragment">Bannery reklamowe, grupy linków nawigacyjnych.</li>
+						<li class="fragment">Powiązane strony np. w przypadku blogów.</li>
+					</ul>
+				</section>
+				<section>
+					<h3 class="light-pink-text">Użycie</h3>
+					<ul>
+						<li class="fragment">Element ten nie nadaje się do oznaczania uwag na marginesie.</li>
+						<li class="fragment">Nie dzieli treści na sekcje i dlatego nie wprowadza nowej sekcji do konspektu.</li>
+					</ul>
+				</section>
+			</section>
+
+			<section class="definition">
+				<h2 class="dark-pink-text">Listy HTML</h2>
+				<ul>
+					<li class="fragment">&ltul&gt unordered list (lista nieuporządkowana)</li>
+					<li class="fragment">&ltol&gt ordered list (lista uporządkowana)</li>
+					<li class="fragment">&ltdl&gt definition list (lista definicyjna)</li>
+				</ul>
+			</section>
+
+			<section class="code">
+				<h3 class="light-pink-text">Lista uporządkowana</h3>
+				<pre><code data-trim>
+				<ul>
+					<li>Element listy</li>
+					<li>Element listy</li>
+				</ul>
+				</code></pre>
+			</section>
+
+			<section class="code">
+				<h3 class="light-pink-text">Lista nieuporządkowana</h3>
+				<pre><code data-trim>
+				<ol>
+					<li>Element listy</li>
+					<li>Element listy</li>
+				</ol>
+				</code></pre>
+			</section>
+
+			<section class="code">
+				<h3 class="light-pink-text">Lista definicji</h3>
+				<pre><code data-trim >
+				<dl>
+					<dt>Pojęcie [definiton term]</dt>
+					<dd>Definicja /opis pojęcia [definition decription]</dd>
+				</dl>					  
+				</code></pre>
+				<p>W tej liście do danego pojęcia przypisujemy określoną definicję, 
+					tak jakbyśmy pisali słownik.</p>
+					<p>Jednemu pojęciu można przypisywac wiele znaczeń.</p>
+			</section>
+
+			<section class="code">
+				<p>Listy możemy w sobie zagnieżdżać i je ze sobą łączyć.</p>
+				<pre><code data-trim data-line-numbers="5-6">
+					<ol>
+						<li>Element listy</li>
+						<li>Element listy
+						  <ul>
+							<li>Element listy zagnieżdżonej</li>
+							<li>Element listy zagnieżdżonej</li>
+						  </ul>
+						</li>
+					  </ol>				
+				</code></pre>
+			</section>
+
+			<section>
+				<h2 class="dark-pink-text">Link</h2>
+				<div class="item">
+					<img class="item_img" src="img/link_html.png">
+				</div>
+			</section>
+
+			<section>
+				<h4 class="dark-pink-text">Atrybut target</h4>
+				<p>Określa czy link ma otworzyć się w tym samym czy nowym oknie przeglądarki.</p>
+				<p>Domyślnie otwiera się w tym samym, aby to zmienić należy ustawić wartość ‘_blank’ dla tego atrybutu.</p>
+			</section>
+
+			<section>
+				<section class="list">
+					<h3 class="light-pink-text">Rodzaje linków</h3>
+				</section>
+				<section>
+					<p>Wewnętrzne - (np. do innej sekcji na tej samej stronie lub do innych podstron w ramach tej samej domeny).</p>
+					<p>Link do sekcji (wymaga podania id)</p>
+					<pre><code  data-trim>
+						<a href="#first">Pierwszy paragraf</a>
+					</code></pre>
+					<p>Link do podstrony</p>
+					<pre><code  data-trim>
+						<a href="#">Strona Główna</a> //link strony do samej siebie
+						<a href="kontakt/index.html">Kontakt</a>
+					</code></pre>
+				</section>
+				<section>
+					<p>Zewnętrzne - prowadzące do stron znajdujących się na innych domenach.</p>
+					<pre><code  data-trim>
+						<a href=”https://womenintechnology.pl” traget=”_blank > Tytuł linka </a>
+					</code></pre>
+				</section>
+			</section>
+
+			<section>
+				<section class="list">
+					<h2 class="light-pink-text">Obraz &ltimg&gt</h2>
+				</section>
+				<section>
+					<pre><code  data-trim>
+						<img src="logo.png" width="119" height="51" alt='Moja firma logo' title='Logo' >
+					</code></pre>
+					<p>src (source) - gdzie znajduje sie nasz obraz (w ktorym folderze zostal zapisany)</p>
+					<p>alt (tekst alternatywny) - tekst opisujący co znajduje sie na zdjeciu. 
+						Na stronie pojawia się on tylko w momencie, gdy źródło zdjęcia jest niedostępne (np. zostało usunięte)</p>
+					<p>title - wyświetlany jest w momencie, gdy najedziemy myszką na zdjęcie. </p>
+				</section>
+				<section>
+					<h2 class="light-pink-text">Opis zdjęcia</h2>
+					<pre><code  data-trim>
+						<figure>
+							<img src="WomenInTechnology.png" alt="WomenInTechnology logo" title="logo">
+							<figcaption>Logo WomenInTechnology</figcaption>
+						  </figure>						  
+					</code></pre>
+					<p>Przy pomocy elementu &ltfigure&gt zaznaczamy elementy, 
+						które są samodzielną częścią dokumentu, głównie zdjęcia, rysunki, wykresy.</p>
+					<p>Wewnątrz elementu &ltfigure&gt  zamieszczamy element &ltfigcaption&gt , który jest właściwym opisem zdjęcia.</p>
+				</section>
+			</section>
+
+			<section>
+				<section class="definition">
+					<h2 class="dark-pink-text">Tabele</h2>
+					<ul>
+						<li class="fragment">Tabela &lttable&gt</li>
+						<li class="fragment">Wiersz &lttr&gt (ang. table row)</li>
+						<li class="fragment">Komórka &lttd&gt (ang. table data/table cell)</li>
+						<li class="fragment">Nagłówek &ltth&gt (ang. table heading)</li>
+					</ul>
+				</section>
+				<section>
+					<pre><code  data-trim>
+						<table>
+							<tr>
+							  <th>Nagłówek 1 kolumny</th>
+							  <td>1 wiersz 1 kolumna</td>
+							  <td>1 wiersz 2 kolumna</td>
+							</tr>
+							<tr>
+							  <th>Nagłówek 2 kolumny</th>
+							  <td>2 wiersz 1 kolumna</td>
+							  <td>2 wiersz 2 kolumna</td>
+							</tr>
+						  </table>			
+					</code></pre>
+				</section>
+
+				<section class="definition">
+					<p class="dark-pink-text">Łączenie kolumnami</p>
+					<p>Atrybutu colspan przyjmuje wartości liczbowe np: colspan="2"</p>
+					<table>
+						<tr>
+						  <th></th>
+						  <th>Poniedziałek</th>
+						  <th>Wtorek</th>
+						</tr>
+						<tr>
+						  <th>18:00</th>
+						  <td>Basen</td>
+						  <td>Basen</td>
+						</tr>
+						<tr>
+						  <th>20:00</th>
+						  <td colspan="2">Zajęcia z języka angielskiego</td>
+						</tr>
+					   </table>	
+				</section>
+				<section>
+					<pre><code  data-trim data-line-numbers="14">
+						<table>
+							<tr>
+							  <th></th>
+							  <th>Poniedziałek</th>
+							  <th>Wtorek</th>
+							</tr>
+							<tr>
+							  <th>18:00</th>
+							  <td>Basen</td>
+							  <td>Basen</td>
+							</tr>
+							<tr>
+							  <th>20:00</th>
+							  <td colspan="2">Zajęcia z języka angielskiego</td>
+							</tr>
+						   </table>		
+					</code></pre>
+				</section>
+				<section class="definition">
+					<p class="dark-pink-text">Łączenie wierszami</p>
+					<p> Atrybut rowspan ten działa analogicznie do poprzedniego, tylko tym razem zwiększając rozpiętość komórki w pionie.</p>
+					<table>
+						<tr>
+						  <th></th>
+						  <th>Rodzaj</th>
+						</tr>
+						<tr>
+							<td rowspan="3">Horror</td>
+						  <th>Piła 3</th>
+						</tr>
+						<tr>
+						  <th>The Ring</th>
+						</tr>
+						<tr>
+						  <th>Obcy</th>
+						</tr>
+					  </table>
+				</section>
+				<section>
+					<pre><code  data-trim data-line-numbers="7">
+						<table>
+							<tr>
+							  <th></th>
+							  <th>Rodzaj</th>
+							</tr>
+							<tr>
+								<td rowspan="3">Horror</td>
+							  <th>Piła 3</th>
+							</tr>
+							<tr>
+							  <th>The Ring</th>
+							</tr>
+							<tr>
+							  <th>Obcy</th>
+							</tr>
+						  </table>	
+					</code></pre>
+				</section>
+
+				<section class="list">
+					<h3 class="light-pink-text">Sekcje tabeli</h3>
+					<ul>
+						<li class="fragment">&lthead&gt sekcja nagłówkowa tabeli np: nazwy kolumn tabeli </li>
+						<li class="fragment">&lttbody&gt ciało tabeli np: dane tabeli </li>
+						<li class="fragment">&lttbody&gt stopka tabeli np: dane podsumowujące</li>
+					</ul>
+				</section>
+			</section>
+
+			<section>
+				<section class="definition">
+					<h2 class="dark-pink-text">Elementy blokowe i liniowe</h2>
+				</section>
+				<section class="definition">
+					<h2 class="dark-pink-text">Elementy blokowe</h2>
+					<p>Zajmują tyle miejsca ile same potrzebują, 
+						pozostawiając resztę miejsca w tej samej linii dla innych elementów liniowych np: &lta&gt, &ltimg&gt
+					</p>
+				</section>
+				<section class="definition">
+					<h2 class="dark-pink-text">Elementy liniowe</h2>
+					<p>Elementy blokowe zawsze wyświetlane są na nowej linii i zajmują całą jej powierzchnię.</p>
+						<p>np: &lth1&gt – &lth6&gt, &ltp&gt, &ltul&gt, &ltol&gt, &ltli&gt, &ltdl&gt, &ltdt&gt, &ltdd&gt
+					</p>
+					<img class="item_img" src="img/inline_block_elements.png">
+				</section>
+			</section>
+					
+			<section>
+				<section class="definition">
+					<h2 class="dark-pink-text">Element input</h2>
+				</section>
+				<section>
+					<p>Input pozwala wprowadzic dane przez uzytkownika na stronę.</p>
+					<pre><code  data-trim>
+						<input type=”text” value=”przykladowy test” disabled> 					  
+					</code></pre>
+				</section>
+				<section class="list">
+					<h3 class="light-pink-text">Atrybuty elementu input</h3>
+					<ul>
+						<li class="fragment">type='text'.</li>
+						<li class="fragment">type="password" - nie pokazuje wprowadzonych przez nas znaków.</li>
+						<li class="fragment">value="domyślna wartość" - użytkownik może, ale nie musi jej modyfikować.</li>
+						<li class="fragment">disabled - blokuje możliwość edytowania pola.</li>
+					</ul>
+				</section>
+
+				<section class="list">
+					<h3 class="light-pink-text">Inne typy inputów</h3>
+					<div class="item">
+						<pre><code  data-trim>
+							<input type='button'> 					  
+							<input type='color'> 					  
+							<input type='date'> 					  				  					  
+							<input type='range'> 					  
+							<input type='time'> 					  
+							<input type='week'> 					  
+						</code></pre>
+						<input type='button'> 					  
+						<input type='color'> 					  
+						<input type='date'> 					  				  
+						<input type='range'> 					  
+						<input type='time'> 					  
+						<input type='week'> 
+					</div>
+				</section>
+
+				<section class="definition">
+					<h3 class="light-pink-text">Typ radio</h3>
+					<pre><code  data-trim>
+						<p>Dodatki:<p>
+							<label>
+							  <input type="radio" name="food" value="Frytki" checked> Frytki
+							</label>
+							<label>
+							  <input type="radio" name="food" value="Ziemniaki"> Ziemniaki
+							</label>
+							<label>
+							  <input type="radio" name="food" value="Ryż"> Ryż
+							</label>
+					</code></pre>
+					<p>name - musi mieć identyczną wartość dla wszystkich wykluczających się radio input’ów.</p>
+					<p>value - do przesyłania danych z formularza</p>
+					<p>checked - domyślnie zaznacza jeden przycisk</p>
+				</section>
+
+				<section class="definition">
+					<h3 class="light-pink-text">Typ checkbox</h3>
+					<pre><code  data-trim>
+						<label><input type="checkbox">Potwierdzam znajomość regulaminu</label>
+					</code></pre>
+					<label><input type="checkbox">Potwierdzam znajomość regulaminu</label>
+				</section>
+
+				<section class="definition">
+					<p class="dark-pink-text">Do opisu inputów używamy elementu &ltlabel&gt</p>
+					<pre><code  data-trim>
+						<label>Cena <input type="text"></label>				  
+					</code></pre>
+					<label>Cena <input type="text"></label>
+				</section>
+
+				<section class="definition">
+					<p class="dark-pink-text">Dla nowszysch przeglądaek można użyć elementu placeholder</p>
+					<p>Tekst ten pojawi się w środku elementu &ltinput&gt i zniknie jak zaczniemy wpisywać swoje dane.</p>
+					<pre><code  data-trim>
+						<input type="text" placeholder="Imię i Nazwisko">			  
+					</code></pre>
+					<input type="text" placeholder="Imię i Nazwisko">
+				</section>
+			</section>
+
+			<section>
+				<section class="definition">
+					<h3 class="light-pink-text">Grupowanie inputów - fieldset i legend</h3>
+				</section>
+				<section>
+					<p>Elementy służące do wprowadzania danych można pogrupować.</p>
+					<p>Element fieldset semantycznie grupuje pola</p>
+					<p>Grupę tą można opisać za pomocą legendy - elementu &ltlegend&gt.</p>
+				</section>
+				<section>
+					<pre><code  data-trim data-line-numbers="0-2">
+						<fieldset>
+							<legend>Dane personalne</legend>
+							<label>Imię <input type="text"></label>
+							<label>Nazwisko <input type="text"></label>
+						</fieldset>
+					</code></pre>
+					
+					<fieldset>
+						<legend>Dane personalne</legend><br>
+						<label>Imię <input type="text"></label><br>
+						<label>Nazwisko <input type="text"></label>
+					</fieldset>
+				</section>
+			</section>
+
+			<section class="definition">
+				<h3 class="light-pink-text">Element textarea</h3>
+				<pre><code  data-trim>
+					<textarea cols="50" rows="4"></textarea>
+				</code></pre>
+				<p>Wieloliniowe pole do wpisywania inputu np: wiadomość/komentarz.</p>
+				<p>Możemy użyć atrybutów cols and rows, żeby samemu dostosować wielkość.</p>
+				<textarea cols="50" rows="4"></textarea>
+			</section>
+
+			<section class="definition">
+				<h3 class="light-pink-text">Element select</h3>
+				<pre><code  data-trim>
+					<select>
+						<option>Panna cotta 75g</option>
+						<option selected>Tiramisu 150g</option>
+						<option>Creme brulle 100g</option>
+					  </select>
+				</code></pre>
+				<p>Wieloliniowe pole do wpisywania inputu np: wiadomość/komentarz.</p>
+				<p>Możemy użyć atrybutów cols and rows, żeby samemu dostosować wielkość</p>
+				<textarea cols="50" rows="4"></textarea>
+			</section>
+
+			<section>
+				<section class="definition">
+					<h2 class="dark-pink-text">Formularze</h2>
+					<p>Formularz HTML tworzymy poprzez zastosowanie elementu &ltform&gt. </p>
+				</section>
+				<section>
+					<pre><code  data-trim>
+						<form action="form.php">
+							<label>Login <input name="login" type="text"></label>
+							<label>Email <input name="email" type="email"></label>
+							<label>Hasło <input name="password" type="password"></label>
+							<input type="submit" value='Wyslij'>
+						</form>					 
+					</code></pre>
+					<form action="form.php">
+						<label>Login <input name="login" type="text"></label><br>
+						<label>Email <input name="email" type="email"></label><br>
+						<label>Hasło <input name="password" type="password"></label><br>
+						<input type="submit" value='Wyslij'>
+					</form>	
+				</section>
+				<section>
+					<p>W celu wysłania danych naszym formularzem html, 
+						musimy stworzyć plik z instrukcjami np. w języku PHP i zapisać go w folderze z naszą stroną internetową 
+						np. pod nazwą form.php.</p>
+					<p>Do elementu &ltform&gt dodajemy atrybut action, który wskazuje ścieżkę dostępu do naszego pliku form.php.</p>
+					<p>Aby dane zostaly poprawnie rozpoznane przez serwer musimy dodać atrybut name.</p>
+				</section>
+			</section>
+
+			<section class="more-ridings">
+				<h2 class="center">Polecane źródła:</h2>
+				<ol>
+					<li><a href="http://how2html.pl">Podstawy HTML</a></li>
+					<li><a href="https://developer.mozilla.org/pl/">Dokumentacja MDN</a></li>
+					<li><a href="https://www.flynerd.pl/2018/12/ta-strona-nie-ma-sensu-prosty-tutorial-html-i-css.html">Tutorial od Flynerd</a></li>
+					<li><a href="https://www.w3schools.com/html/">w3schools</a></li>
+				</ol>
+			</section>
+			<!-- HTML END -->
 			<section class="self-into">
 				<h2>Back-end developer</h2>
 
