@@ -924,29 +924,36 @@
 				</section>
 
 				<section>
-					<h3 class="light-pink-text">Zmienne - deklaracja</h3>
+					<h3 class="light-pink-text">Przykłady deklarowania zmiennych</h3>
 					<pre><code data-trim>
-						{% set foo = 'foo' %}
-						{% set foo = 1 %}
-						{% set foo = [1, 2] %}
-						{% set foo = {'foo': 'bar'} %}
+						{% set zmienna1 = 'To jest moja zmienna' %}
+						{% set zmienna2 = 1 %}
+						{% set zmienna3 = [1, 2] %}
+						{% set zmienna4 = {'foo': 'bar'} %}
 					</code></pre>
-					<p>Odwoływanie się do zmiennej:</p>
+					<p>Odwołanie się do zmiennej:</p>
 					<pre><code data-trim>
-						{{ zmienna }}
+						<p>{{ zmienna1 }}</p>
 					</code></pre>
+					<p>Wynik: To jest moja zmienna</p>
 				</section>
 
 				<section>
 					<h3 class="light-pink-text">Zmienne zewnętrzne</h3>
 					<p>Zewnętrzny plik json ze zmiennymi np: globals.json</p>
+					<p>Należy zaincludować plik tak gdzie chcemy użyć zmiennej.</p>
+					<p>Np: na samej górze w pliku page.twig w folderze AboutUs->View->page.twig </p>
 					<pre><code data-trim>
 						{% include '/globals.json' %}
+					</code></pre>
+					<p>Do zmiennej możemy się odwołać w ten sam sposób</p>
+					<pre><code data-trim>
+						<p>{{ zmienna1 }}</p>
 					</code></pre>
 				</section>
 				
 				<section>
-					<h3 class="light-pink-text">Przykład</h3>
+					<h3 class="light-pink-text">Przykład deklaracji obiektu</h3>
 					<pre><code data-trim>
 						{% set users = [
 							{
@@ -964,6 +971,7 @@
 
 				<section>
 					<h3 class="light-pink-text">For</h3>
+					<p>Użycie zadeklarowanego obiektu 'Users' w pętli for</p>
 					<pre><code data-trim>
 						{% for user in users %}
 							<li>{{ user.username }}</li>
@@ -975,20 +983,25 @@
 					<h3 class="light-pink-text">Range</h3>
 					<pre><code data-trim>
 						{% for i in range(0, 3) %}
-							{{ i }},
+							{{ i }}
 						{% endfor %}
 					</code></pre>
 				</section>
 
 				<section>
 					<h3 class="light-pink-text">Podzielność plików twig</h3>
-					<p>Można includować inne pliki twig</p>
+					<p>Można includować inne pliki twig - np: header.twig który wykorzystujemy na każdej stronie.</p>
 					<p>	W zależności od podejścia stosuje się różne podziały plików typu twig
-					np. dzielenie ze względu na funkcjonalność, ze względu na modułowość</p>
+					np. dzielenie ze względu na funkcjonalność, ze względu na modułowość.</p>
 	
 					<pre><code data-trim>
 						{% include './header.twig' %}
-						...
+						
+						(tutaj może znajdować się zawartość strony np: sekcja dla strony aboutUs)
+						<section>
+							....
+						</section>
+
 						{% include './footer.twig' %}
 					</code></pre>
 				</section>
@@ -999,30 +1012,31 @@
 				<section>
 					<h3 class="light-pink-text">Bloki</h3>
 					<p>Pozwala utworzyć plik np. default.twig, a w nim blok który chcemy podmienić</p>
-					<pre><code data-trim>
-						{% include '../base/head.twig' %}
+					<pre><code data-trim data-line-numbers="3-6">
+						{% include './header.twig' %}
 							<body>
+								// ta część może zostać podmieniona
 								{% block maincontent %}
 						
 								{% endblock %}
 						
-						{% include '../layout/footer.twig' %}
-						{% include '../base/scripts.twig' %}
-						
-							</body>
-						{% include '../base/end.twig' %}
+						{% include './footer.twig' %}
 					</code></pre>
+					<p>
+						Możemy wykorzystać defaultowy plik na każdej stronie i np: podmieniać jakaś część poprzez wykorzystanie bloku
+					</p>
 				</section>
 				<section>
 					<p>Użycie: </p>
-					<pre><code data-trim>
-						{% extends 'master/default.twig' %}
-	
+					<pre><code data-trim data-line-numbers="4-9">
+					//Wykorzystanie pliku default.twig z blokiem
+						{% extends './default.twig' %}
+
 						{% block maincontent %}
+						//Nowa zawartość bloku 
 							<section class="section">
 								<img class="header_img" src="/img/za_kulisami_kultura.jpg">
 							</section>
-						
 						{% endblock %}
 					</code></pre>
 				</section>
